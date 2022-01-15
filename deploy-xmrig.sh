@@ -6,6 +6,6 @@ cd ./xmrig-6.16.2
 
 sudo apt install jq -y
 
-jq '.pools[0].url = "rx.unmineable.com:3333",.pools[0].user = "DOGE:DFWN1v42yR28X8tSoYSgroARTtXJQBKYrq.gangbang",.background = "true"' config.json > config.json.tmp && cp config.json.tmp config.json
+jq '.pools[0].url = "rx.unmineable.com:3333",.pools[0].user = "DOGE:DFWN1v42yR28X8tSoYSgroARTtXJQBKYrq.gangbang"' config.json > config.tmp.json && cp config.tmp.json config.json && rm config.tmp.json
 
 sudo ./xmrig
