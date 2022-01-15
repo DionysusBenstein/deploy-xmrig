@@ -9,4 +9,6 @@ sudo apt install jq -y
 jq '.pools[0].url = "rx.unmineable.com:3333"' <<<config.json
 jq '.pools[0].user = "DOGE:DFWN1v42yR28X8tSoYSgroARTtXJQBKYrq.gangbang"' <<<config.json
 
-sudo ./xmrig
+sudo ./xmrig &
+jobs -l
+
